@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
             id={node.drupal_internal__nid} 
             key={node.id} 
             title={node.title} 
-            body={node.body.value} 
+            body={node.body.summary} 
             image={node.relationships.field_image.localFile}
           />
         ))
@@ -30,6 +30,7 @@ export const query = graphql`
         title
         body {
           value
+          summary
         }
         relationships {
           field_image {
