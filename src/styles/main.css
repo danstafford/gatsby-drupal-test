@@ -15,14 +15,21 @@
     margin: auto;
 }
 .headingStyles {
+    display: block;
     margin-top: 0;
     margin-bottom: 30px;
+    text-decoration: none;
+    color: #232129;
+    border-bottom: 1px solid #ccc;
 }
 .card {
-    display: flex;
     border-bottom: 2px;
     margin-bottom: 60px;
 }
+.card-text {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
 .imageStyle {
-    margin-right: 60px;
 }

@@ -2,7 +2,7 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `gatsby-drupal-test`,
+    title: `Drupal + Gatsby`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [

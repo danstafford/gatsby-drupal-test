@@ -1,21 +1,22 @@
 import React from "react"
 import "../styles/main.css"
+import { Link } from "gatsby"
+import Header from "../components/header"
 
 const Layout = ({ children } :any) => {
 
-    return (
-        <>
-            <div className="bar topbar"></div>
-            <main className="pageStyles">
-                <title>Home Page</title>
-                <h1 className="headingStyles">
-                Drupal + Gatsby
-                <hr></hr>
-                </h1>
-                {children}
-            </main>
-      </>
-    )
+  return (
+    <>
+      <div className="bar topbar"></div>
+      <main className="pageStyles">
+        <title>Home Page</title>
+        <Link to="/" className="headingStyles">
+          <Header />
+        </Link>
+        {children}
+      </main>
+    </>
+  )
 }
 
 export default Layout
