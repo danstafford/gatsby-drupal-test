@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Card from '../templates/card'
+import Layout from '../components/Layout'
+import Card from '../templates/Card'
 
 const IndexPage = ({ data }) => {
 

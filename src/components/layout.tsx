@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/main.css"
 import { Link } from "gatsby"
-import Header from "../components/header"
+import Header from "./Header"
 
 const Layout = ({ children } :any) => {
 

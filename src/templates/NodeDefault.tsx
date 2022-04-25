@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 const NodeDefault = ({ data }) => {
   const node = data.nodeArticle
