@@ -1,8 +1,13 @@
 import * as React from 'react'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
-const Card = (props) => {
+const Card = (props: { 
+  image: ImageDataLike; 
+  id: string; 
+  title: string; 
+  body: string 
+}) => {
   return (
     <div>
       <GatsbyImage className='imageStyle' image={getImage(props.image)} alt={'placeholder'} /> 

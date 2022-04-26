@@ -13,24 +13,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       allNodeArticle(sort: {fields: [created], order: DESC}) {
         nodes {
           drupal_internal__nid
-          title
-          body {
-            value
-          }
-          relationships {
-            field_image {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 800
-                    height: 400
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP]
-                  )
-                }
-              }
-            }
-          }
         }
       }
     }

@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => {
         data.allNodeArticle.nodes.map(( node ) => (
           <Card 
             id={node.drupal_internal__nid} 
-            key={node.id} 
+            key={node.drupal_internal__nid} 
             title={node.title} 
             body={node.body.summary} 
             image={node.relationships.field_image.localFile}
@@ -38,7 +38,7 @@ export const query = graphql`
               childImageSharp {
                 gatsbyImageData(
                   width: 800
-                  height: 400
+                  height: 300
                   placeholder: BLURRED
                   formats: [AUTO, WEBP]
                 )
